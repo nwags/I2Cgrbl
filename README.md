@@ -5,6 +5,9 @@ grbl with I2C input (address=4)
 
 
 I wanted to control a grbl board using i2c. The grbl board is set as a slave board with the address 
-arbitrarily set to 4. It can be changed in nwi.c. This is based off of twi. I plan on cleaning this 
-up at some point and adding feedback through i2c similar to the current feedback through the serial 
-connection.
+arbitrarily set to 4. It can be changed in nwi.c. This is based off of twi.
+
+I have a working bluetooth multi-master i2c grbl setup now for 2-way communication between mobile 
+device and grbl, but I'm still testing it and I'll post it soon. The set-up is:
+
+Android device(using just blueterm right now) <=BT=> BT Arduino <=i2c=> GRBL Arduino
